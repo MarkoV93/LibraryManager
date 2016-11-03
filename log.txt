@@ -1,0 +1,109 @@
+13:30:02.818 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+13:30:02.893 [main] INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+13:30:02.912 [main] INFO  Environment:239 - HHH000206: hibernate.properties not found
+13:30:02.917 [main] INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+13:30:03.012 [main] INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+13:30:03.013 [main] INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+13:30:03.345 [main] INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+13:30:03.681 [main] WARN  ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+13:30:03.686 [main] WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+13:30:03.709 [main] INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/MyLibrary]
+13:30:03.711 [main] INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+13:30:03.713 [main] INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+13:30:03.717 [main] INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:30:05.020 [main] INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+13:30:05.481 [main] INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+13:30:05.491 [main] INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+13:30:06.938 [main] INFO  DefaultLoadEventListener:159 - HHH000327: Error performing load command : org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.mycompany.model.Author#13]
+13:33:26.804 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+13:33:26.898 [main] INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+13:33:26.904 [main] INFO  Environment:239 - HHH000206: hibernate.properties not found
+13:33:26.917 [main] INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+13:33:27.002 [main] INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+13:33:27.004 [main] INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+13:33:27.224 [main] INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+13:33:27.415 [main] WARN  ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+13:33:27.419 [main] WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+13:33:27.430 [main] INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/MyLibrary]
+13:33:27.433 [main] INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+13:33:27.434 [main] INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+13:33:27.438 [main] INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:33:28.776 [main] INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+13:33:29.233 [main] INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+13:33:29.243 [main] INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+13:33:30.803 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1062, SQLState: 23000
+13:33:30.804 [main] ERROR SqlExceptionHelper:146 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+13:33:30.826 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1062, SQLState: 23000
+13:33:30.827 [main] WARN  SqlExceptionHelper:233 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+13:33:30.837 [main] WARN  AbstractDao:43 - object didn't createcom.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+13:33:54.149 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1451, SQLState: 23000
+13:33:54.153 [main] ERROR SqlExceptionHelper:146 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+13:33:54.154 [main] INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+13:33:54.157 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1451, SQLState: HY000
+13:33:54.158 [main] WARN  SqlExceptionHelper:233 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+13:33:54.160 [main] WARN  AbstractDao:65 - object doesn't deletedcom.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+13:50:06.681 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+13:50:06.769 [main] INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+13:50:06.775 [main] INFO  Environment:239 - HHH000206: hibernate.properties not found
+13:50:06.782 [main] INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+13:50:06.875 [main] INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+13:50:06.876 [main] INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+13:50:07.156 [main] INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+13:50:07.461 [main] WARN  ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+13:50:07.467 [main] WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+13:50:07.491 [main] INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/MyLibrary]
+13:50:07.494 [main] INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+13:50:07.495 [main] INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+13:50:07.499 [main] INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:50:08.947 [main] INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+13:50:09.622 [main] INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+13:50:09.660 [main] INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+13:50:11.309 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1062, SQLState: 23000
+13:50:11.310 [main] ERROR SqlExceptionHelper:146 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+13:50:11.315 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1062, SQLState: 23000
+13:50:11.316 [main] WARN  SqlExceptionHelper:233 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+13:50:11.319 [main] WARN  AbstractDao:42 - object didn't createcom.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+13:50:45.364 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1451, SQLState: 23000
+13:50:45.365 [main] ERROR SqlExceptionHelper:146 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+13:50:45.366 [main] INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+13:50:45.371 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1451, SQLState: HY000
+13:50:45.372 [main] WARN  SqlExceptionHelper:233 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+13:50:45.373 [main] WARN  AbstractDao:64 - object doesn't deletedcom.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+14:04:01.243 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1062, SQLState: 23000
+14:04:01.245 [main] ERROR SqlExceptionHelper:146 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+14:04:01.250 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1062, SQLState: 23000
+14:04:01.251 [main] WARN  SqlExceptionHelper:233 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+14:04:01.251 [main] WARN  AbstractDao:42 - object didn't createcom.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+14:04:27.920 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1451, SQLState: 23000
+14:04:27.921 [main] ERROR SqlExceptionHelper:146 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+14:04:27.921 [main] INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+14:04:27.924 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1451, SQLState: HY000
+14:04:27.924 [main] WARN  SqlExceptionHelper:233 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+14:04:27.925 [main] WARN  AbstractDao:64 - object doesn't deletedcom.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+14:06:27.203 [main] INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+14:06:27.259 [main] INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+14:06:27.264 [main] INFO  Environment:239 - HHH000206: hibernate.properties not found
+14:06:27.272 [main] INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+14:06:27.353 [main] INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+14:06:27.354 [main] INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+14:06:27.629 [main] INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+14:06:27.998 [main] WARN  ConnectionProviderInitiator:206 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+14:06:28.003 [main] WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+14:06:28.024 [main] INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/MyLibrary]
+14:06:28.027 [main] INFO  DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+14:06:28.028 [main] INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+14:06:28.032 [main] INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+14:06:29.276 [main] INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+14:06:29.831 [main] INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+14:06:29.860 [main] INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+14:06:31.657 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1062, SQLState: 23000
+14:06:31.658 [main] ERROR SqlExceptionHelper:146 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+14:06:31.665 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1062, SQLState: 23000
+14:06:31.666 [main] WARN  SqlExceptionHelper:233 - Duplicate entry 'horror' for key 'UK_ctffrbu4484ft8dlsa5vmqdka'
+14:06:31.668 [main] WARN  AbstractDao:42 - object didn't create
+14:06:56.588 [main] WARN  SqlExceptionHelper:144 - SQL Error: 1451, SQLState: 23000
+14:06:56.589 [main] ERROR SqlExceptionHelper:146 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+14:06:56.589 [main] INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+14:06:56.591 [main] WARN  SqlExceptionHelper:232 - SQL Warning Code: 1451, SQLState: HY000
+14:06:56.592 [main] WARN  SqlExceptionHelper:233 - Cannot delete or update a parent row: a foreign key constraint fails (`mylibrary`.`book`, CONSTRAINT `FK_lwwyu1h28alv6nnnb31qnfq` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`))
+14:06:56.592 [main] WARN  AbstractDao:64 - object doesn't deleted

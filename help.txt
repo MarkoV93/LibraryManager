@@ -1,0 +1,10 @@
+main menu actions:
+add - for adding new book
+delete - for deleting new book
+books - for viewing all books
+find - for finding book by part of title
+genres - for viewing       genresand books by genre
+update - for changing book's title
+exit - exiting from application
+
+cencel -for returning to main menu
